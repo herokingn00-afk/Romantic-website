@@ -1,27 +1,41 @@
-// Urdu Shayaris for Zainu
-const shayaris = [
-    "Zainuu tumhari yaad se roshan meri har shaam rehti hai,\nTumhari mohabbat hi meri rooh ka inaam rehti hai.\nRab se aur kya maangu apni taqdeer ke liye,\nBas tumhari hansi hi meri har dua ka naam rehti hai..",
-    
-    "mohtarmaaa aapki aankhon mein meri duniya ka noor basta hai,\nAapki har baat mein mohabbat ka dastoor basta hai.\nMain kya tareef karun aapki ai jaan-e-wafa,\nAapke wajood mein khud Rab ka noor basta hai...",
-    
-    "mohtarma ki gardan ka woh til bhi kya haseen nishaan hai,\nJaise chaand ke daaman mein chhupa aasman hai.\nAapko dekhoon to har dafa yahi ehsaas hota hai,\nKe husn bhi tere aage bas ek imtihaan hai..",
-    
-    "wapas kuch bhool jaao toh phir seh kehna 'kya naam tha?'\nDil ne kaha, meri jaan... bas mera naam tha.\nAapki har bhooli hui baat bhi yaadgar ban jaati hai,\nAapki har ada pe mohabbat beshumaar ho jaati hai..."
+// Urdu Shayaris for Zainu with image paths
+const messages = [
+    {
+        text: "Zainuu tumhari yaad se roshan meri har shaam rehti hai,\nTumhari mohabbat hi meri rooh ka inaam rehti hai.\nRab se aur kya maangu apni taqdeer ke liye,\nBas tumhari hansi hi meri har dua ka naam rehti hai.",
+        image: "images/photo1.jpg"
+    },
+    {
+        text: "mohtarmaaa aapki aankhon mein meri duniya ka noor basta hai,\nAapki har baat mein mohabbat ka dastoor basta hai.\nMain kya tareef karun aapki ai jaan-e-wafa,\nAapke wajood mein khud Rab ka noor basta hai.",
+        image: "images/photo2.jpg"
+    },
+    {
+        text: "mohtarma ki gardan ka woh til bhi kya haseen nishaan hai,\nJaise chaand ke daaman mein chhupa aasman hai.\nAapko dekhoon to har dafa yahi ehsaas hota hai,\nKe husn bhi tere aage bas ek imtihaan hai.",
+        image: "images/photo3.jpg"
+    },
+    {
+        text: "wapas kuch bhool jaao toh phir seh kehna 'kya naam tha?'\nDil ne kaha, meri jaan... bas mera naam tha.\nAapki har bhooli hui baat bhi yaadgar ban jaati hai,\nAapki har ada pe mohabbat beshumaar hai.",
+        image: "images/photo4.jpg"
+    }
 ];
 
 // Function to show message by index
 function showMessage(index) {
     if (index >= 1 && index <= 4) {
-        showPopup(shayaris[index - 1]);
+        showPopup(messages[index - 1]);
         triggerHeartAnimation();
     }
 }
 
-// Show popup modal
-function showPopup(message) {
+// Show popup modal with image and message
+function showPopup(messageObj) {
     const popup = document.getElementById('popup');
     const popupMessage = document.getElementById('popup-message');
-    popupMessage.textContent = message;
+    const popupImage = document.getElementById('popup-image');
+    
+    popupMessage.textContent = messageObj.text;
+    popupImage.src = messageObj.image;
+    popupImage.alt = "Special Photo";
+    
     popup.style.display = 'block';
 }
 
