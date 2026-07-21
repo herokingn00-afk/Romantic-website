@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background animation -->
+        <div class="background-animation"></div>
+        
+        <!-- Main content -->
+        <div class="main-content">
+            <h1 class="main-title">✨ For You, My Love ✨</h1>
+            
+            <div class="heart-animation">
+                <span class="heart">❤️</span>
+            </div>
+            
+            <p class="intro-text">Click the buttons below to see messages just for you...</p>
+            
+            <!-- Button section -->
+            <div class="button-container">
+                <button class="btn btn-comfort" onclick="showComfort()">Comfort Me 💙</button>
+                <button class="btn btn-encourage" onclick="showEncourage()">Encourage Me 💪</button>
+                <button class="btn btn-admire" onclick="showAdmire()">Admire Me 😊</button>
+                <button class="btn btn-propose" onclick="showPropose()">Love Declaration 💕</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pop-up Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-message" class="popup-message"></div>
+            <button class="btn btn-close" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <!-- Floating text elements -->
+    <div class="floating-texts">
+        <div class="float-text">You are amazing</div>
+        <div class="float-text">I love you</div>
+        <div class="float-text">You matter</div>
+        <div class="float-text">You shine bright</div>
+        <div class="float-text">Forever yours</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
