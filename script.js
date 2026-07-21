@@ -2,15 +2,15 @@
 const messages = [
     {
         text: "Zainuu tumhari yaad se roshan meri har shaam rehti hai,\nTumhari mohabbat hi meri rooh ka inaam rehti hai.\nRab se aur kya maangu apni taqdeer ke liye,\nBas tumhari hansi hi meri har dua ka naam rehti hai.",
-        image: "images/photo1.jpg"
+        image: "images/IMG_20260721_215811_224.jpg"
     },
     {
         text: "mohtarmaaa aapki aankhon mein meri duniya ka noor basta hai,\nAapki har baat mein mohabbat ka dastoor basta hai.\nMain kya tareef karun aapki ai jaan-e-wafa,\nAapke wajood mein khud Rab ka noor basta hai.",
-        image: "images/photo2.jpg"
+        image: "images/Screenshot_2026_0721_215634.jpg"
     },
     {
         text: "mohtarma ki gardan ka woh til bhi kya haseen nishaan hai,\nJaise chaand ke daaman mein chhupa aasman hai.\nAapko dekhoon to har dafa yahi ehsaas hota hai,\nKe husn bhi tere aage bas ek imtihaan hai.",
-        image: "images/photo3.jpg"
+        image: "images/Screenshot_2026_0721_215656.jpg"
     },
     {
         text: "wapas kuch bhool jaao toh phir seh kehna 'kya naam tha?'\nDil ne kaha, meri jaan... bas mera naam tha.\nAapki har bhooli hui baat bhi yaadgar ban jaati hai,\nAapki har ada pe mohabbat beshumaar hai.",
