@@ -143,15 +143,51 @@ body {
 
 .popup-content {
     background: linear-gradient(135deg, #fff5e6 0%, #ffe6f0 100%);
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 50px 40px 40px 40px;
     border-radius: 20px;
     width: 80%;
-    max-width: 600px;
+    max-width: 650px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
     animation: slideUp 0.4s ease;
     border: 3px solid #ff69b4;
     position: relative;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+/* Image Container Styling */
+.popup-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    animation: imageSlideIn 0.5s ease;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    border: 3px solid #ff69b4;
+    transform: rotate(-3deg);
+    transition: all 0.3s ease;
+}
+
+.popup-image:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+@keyframes imageSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) rotate(-5deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(-3deg);
+    }
 }
 
 /* Cute Ribbons */
@@ -228,7 +264,7 @@ body {
     color: #333;
     line-height: 2;
     margin: 30px 0;
-    min-height: 120px;
+    min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -342,6 +378,10 @@ body {
     .popup-content {
         width: 90%;
         padding: 40px 20px 20px 20px;
+    }
+    
+    .popup-image {
+        max-height: 250px;
     }
     
     .float-text {
